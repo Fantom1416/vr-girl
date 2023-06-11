@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url("./126434-koshachih-svet-usy-artist-osveshhenie-1366x768.jpg");
+    display: flex;
+}
+
+.content {
+    width: calc(100% - 400px);
+    height: 100vh;
+    /* border: 5px solid red; */
+}
+
+.navbar {
+    width: 100%;
+    height: 44px;
+    /* background: #fff; */
+    /* background-color: #370368; */
+    background-color: rgb(26, 25, 25);
+    cursor: pointer;
+    padding: 4px;
+}
+
+.name {
+    font-size: 16px;
+    padding-bottom: 3px;
+    color: #fff;
+}
+
+.status {
+    font-size: 12px;
+    color: rgb(79, 165, 251);
+}
+
+.messages {
+    width: 100%;
+    height: calc(100% - 88px);
+    /* background: #fff9; */
+    padding: 20px;
+    overflow: auto;
+}
+
+.msg {
+    display: flex;
+    align-items: flex-end;
+    margin: 6px 0;
+}
+
+.msg img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* margin-right: 30px; */
+    /* position: absolute; */
+}
+
+.msg_text {
+    width: 250px;
+    padding: 8px;
+    background: #fff;
+    margin-left: 10px;
+}
+
+.another .msg_text {
+    border-radius: 8px 8px 8px 0;
+    background-color: #370368;
+    /* background-color:rgb(26, 25, 25); */
+    color: #fff;
+}
+
+.msg_text span {
+    text-align: right;
+    display: block;
+    font-size: 12px;
+    color: #555;
+}
+
+.me {
+    margin-left: calc(100% - 250px);
+    word-break: break-all;
+}
+
+.me .msg_text {
+    border-radius: 8px 8px 0 8px;
+    /* background: #cefcce; */
+    background-color: rgb(26, 25, 25);
+    color: #fff;
+}
+
+.send {
+    width: 100%;
+    height: 44px;
+    /* background: #fff; */
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    /* background-color: #370368; */
+    background-color: rgb(26, 25, 25);
+}
+
+.send i {
+    margin-left: 10px;
+    color: #555;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+.form input {
+    width: 100%;
+    height: 100%;
+    text-indent: 12px;
+    border: none;
+    outline: none;
+    /* background-color: #370368; */
+    background-color: rgb(26, 25, 25);
+}
+
+input {
+    color: rgb(255, 255, 255);
+}
+
+.fa-paper-plane {
+    color: dodgerblue !important;
+    transform: rotate(30deg);
+    display: none;
+}
+
+.sidebar {
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.side_nav input {
+    background-color: rgb(47, 47, 47);
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-indent: 20px;
+}
+
+.sidebar .fa-bars {
+    color: #474747;
+    font-size: 20px;
+    /* margin-right: 80px; */
+    /* padding-right: 50px; */
+    transform: translateX(-35px);
+}
+
+.side_nav {
+    /* border: 2px solid red; */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateY(-277px); */
+    /* border-bottom: 0px solid #404040; */
+
+}
+
+.contact {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border-top: 2px solid rgb(40, 40, 40); */
+    border-bottom: 2px solid rgb(40, 40, 40);
+    width: 100%;
+    height: 55px;
+    /* margin-bottom: 5px;
+    margin-top: 5px; */
+}
+
+.contact h1 {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.contact img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.absolute_box {
+    height: 480px;
+    width: 400px;
+    /* border: 2px solid red; */
+    position: absolute;
+    transform: translateX(550px) translateY(-600px);
+    background-color: #252525;
+    border-radius: 10px;
+}
+
+.absolute_box h4 {
+    color: #fff;
+    font-size: 19px;
+}
+
+.box_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-top: 18px;
+}
+
+.box_nav h4:nth-child(1) {
+    margin-right: 170px;
+}
+
+.box_nav h4:nth-child(2) {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.ava_name {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+    margin-top: 30px;
+    height: 80px;
+}
+
+.ava_name h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.ava_name img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.osebe_uvedom_otpravit {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+}
+
+.osebe {
+    /* border: 2px solid blue; */
+    width: 180px;
+    margin-left: 30px;
+    display: flex;
+    /* align-self: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.osebe:nth-child(2){
+    margin-top: 20px;
+}
+
+.osebe h3 {
+    color: #fff;
+}
+
+.osebe span {
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgb(0, 84, 168)
+}
+
+.uvedom {
+    border-top: 2px solid #474747;
+    border-bottom: 2px solid #474747;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    /* border: 2px solid blue; */
+}
+
+.uvedom h1 {
+    font-size: 20px;
+    color: #fff;
+    /* margin-right: 80px; */
+    transform: translateX(-30px);
+}
+.otpr{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 20px;
+}
+.otpr h1 {
+    font-size: 18px;
+    color: rgba(207, 202, 202, 0.748);
+    margin-left: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.nastroyki{
+    position: absolute;
+}
+#check{
+
+}
+
+
+
+
+
+.otpr:hover{
+    background-color: #00000068;
+    cursor: pointer;
+}
+.otpr h1:hover{
+    color: #fff;
+}
+.contact:hover {
+    background-color: #00000068;
+    cursor: pointer;
+}
